@@ -1,0 +1,95 @@
+.calculator-container {
+    // Height & Display
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    width: 480px;
+    border-radius: 50px;
+
+    
+}
+
+// Number Calculation
+.calculation {
+    display: flex;
+    height: 150px;
+    width: 480px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background: #1E1E24D9;
+    justify-content: flex-end;
+}
+
+.calculated-numbers {
+    height: 150px;
+    width: 480px;
+    font-size: 38px;
+    word-wrap: break-word;
+}
+
+.calculated-numbers p {
+    margin: 15px 15px 0px 15px;
+}
+
+
+
+
+
+// Buttons
+.buttons {
+    height: 600px;
+    width: 480px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.buttons button {
+    height: 120px;
+    width: 120px;
+    border: none;
+    color: white;
+}
+
+
+
+.operations {
+    background: #FFCF99;
+    &:hover {
+        background: #f2bd81;
+    }
+}
+
+.numbers {
+    background: #575557;
+    &:hover {
+        background: #474647;
+    }
+}
+
+.light-gray {
+    background: #8F8B8A;
+    &:hover {
+        background: #7e7a79;
+    }
+}
+
+#xtraLong {
+    width: 240px;
+}
+
+.bottomLeftCurved {
+    border-bottom-left-radius: 50px;
+}
+
+.bottomRightCurved {
+    border-bottom-right-radius: 50px;
+}
+
+
+// Buttons
+
+@media screen and (max-width: 677px) {
+    .calculator-container {
+        scale: .7;
+    }
+}

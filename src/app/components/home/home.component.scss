@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(#fd746c,#ff9068);
+}
+
+@media screen and (max-width: 677px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+}

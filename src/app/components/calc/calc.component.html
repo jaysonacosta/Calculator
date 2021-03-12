@@ -1,0 +1,38 @@
+<div class="calculator-container">
+
+    <section class="calculation">
+
+        <div class="calculated-numbers">
+            <p>{{calculation}}</p>
+        </div>
+        
+    </section>
+
+    <section class="buttons">
+
+        <button class="operations light-gray" id="xtraLong" (click)="clear()">AC</button>
+        <button class="operations light-gray" (click)="switchSign()">+/-</button>
+        <button class="operations" (click)="divide()">÷</button>
+
+        <button class="numbers" (click)="clickNumber(7)">7</button>
+        <button class="numbers" (click)="clickNumber(8)">8</button>
+        <button class="numbers" (click)="clickNumber(9)">9</button>
+        <button class="operations" (click)="multiply()">x</button>
+
+        <button class="numbers" (click)="clickNumber(4)">4</button>
+        <button class="numbers" (click)="clickNumber(5)">5</button>
+        <button class="numbers" (click)="clickNumber(6)">6</button>
+        <button class="operations" (click)="subtract()">-</button>
+
+        <button class="numbers" (click)="clickNumber(1)">1</button>
+        <button class="numbers" (click)="clickNumber(2)">2</button>
+        <button class="numbers" (click)="clickNumber(3)">3</button>
+        <button class="operations" (click)="add()">+</button>
+
+        <button class="numbers bottomLeftCurved" id="xtraLong" (click)="clickNumber(0)">0</button>
+        <button class="numbers" (click)="decimalPoint()">.</button>
+        <button class="operations bottomRightCurved" (click)="equals()">=</button>
+
+    </section>
+
+</div>
